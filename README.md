@@ -6,7 +6,7 @@
 
 ## Canlı Demo
 
-> [EmirhanSariyar.github.io/Zinciri-Kirma-Local](https://emirhansariyar.github.io/Zinciri-Kirma-Local/ZinciriKirma.html)
+> [EmirhanSariyar.github.io/Zinciri-Kirma-Local](https://emirhansariyar.github.io/Zinciri-Kirma-Local/)
 
 ## Özellikler
 
@@ -23,12 +23,12 @@
 
 Hiç kurulum gerekmez. Tek dosya:
 ```bash
-git clone https://github.com/kullaniciadin/zinciri-kirma.git
+git clone https://github.com/EmirhanSariyar/zinciri-kirma.git
 cd zinciri-kirma
 # ZinciriKirma.html dosyasını tarayıcıda aç
 ```
 
-Ya da direkt [indirip](ZinciriKirma.html) tarayıcıda çalıştırabilirsin.
+Ya da direkt [indirip](index.html) tarayıcıda çalıştırabilirsin.
 
 ## Teknoloji
 
