@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zinciri Kırma — Alışkanlık Takibi</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ─── HEADER ───────────────────────────────────────────── -->
+  <header>
+    <div class="logo">
+      <h1>Zinciri Kırma</h1>
+      <p>Her gün bir halka — zincir büyüsün</p>
+    </div>
+    <div class="today-pill">
+      <div class="big"   id="hdrDay"></div>
+      <div class="small" id="hdrDate"></div>
+    </div>
+  </header>
+
+  <!-- ─── NAV ──────────────────────────────────────────────── -->
+  <nav>
+    <button class="active" onclick="switchTab('calendar', this)">📅 Takvim</button>
+    <button onclick="switchTab('stats', this)">📊 İstatistik</button>
+    <button onclick="switchTab('heatmap', this)">🔥 Isı Haritası</button>
+  </nav>
+
+  <!-- ─── MAIN ─────────────────────────────────────────────── -->
+  <main>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <!-- Motivasyon sözü -->
+      <div id="sideQuote"></div>
+
+      <!-- Hedef listesi -->
+      <div>
+        <div class="sec">Hedefler</div>
+        <div id="goalList" class="goal-list"></div>
+      </div>
+
+      <!-- Joker gün -->
+      <div id="jokerSection" style="display:none;">
+        <div class="sec">Joker Gün</div>
+        <div id="jokerBox" class="joker-box"></div>
+        <button class="btn joker-btn" id="jokerBtn" onclick="useJoker()" style="margin-top:8px;">
+          ★ Bugün İçin Joker Kullan
+        </button>
+      </div>
+
+      <!-- Yeni hedef formu -->
+      <div>
+        <div class="sec">Yeni Hedef</div>
+        <div class="form-col">
+          <input type="text" id="gName" placeholder="Hedef adı (ör: Meditasyon)" maxlength="40">
+          <textarea id="gDesc" placeholder="Açıklama (opsiyonel)" rows="2" maxlength="100"></textarea>
+          <div class="color-row" id="colorPicker"></div>
+          <button class="btn" onclick="addGoal()">+ Hedef Ekle</button>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+      <!-- Takvim -->
+      <div id="tab-calendar" class="tab-panel active">
+        <div class="year-nav">
+          <button onclick="changeYear(-1)">←</button>
+          <div class="year-lbl" id="yearLbl">2026</div>
+          <button onclick="changeYear(1)">→</button>
+          <span class="yr-hint">Tamamladığın günlere tıkla ✓</span>
+        </div>
+        <div id="calContainer"></div>
+      </div>
+
+      <!-- İstatistik -->
+      <div id="tab-stats" class="tab-panel">
+        <div id="statsContent"></div>
+      </div>
+
+      <!-- Isı Haritası -->
+      <div id="tab-heatmap" class="tab-panel">
+        <div id="heatmapContent"></div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">
+    <span id="toastIco"></span>
+    <span id="toastMsg"></span>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+
+</body>
+</html>
