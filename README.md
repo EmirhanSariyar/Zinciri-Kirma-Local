@@ -6,7 +6,7 @@
 
 ## Canlı Demo
 
-> [EmirhanSariyar.github.io/zinciri-kirma](https://EmirhanSariyar.github.io/zinciri-kirma)
+> [EmirhanSariyar.github.io/Zinciri-Kirma-Local](https://EmirhanSariyar.github.io/Zinciri-Kirma-Local)
 
 ## Özellikler
 
