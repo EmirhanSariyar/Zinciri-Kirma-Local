@@ -23,9 +23,9 @@
 
 Hiç kurulum gerekmez. Tek dosya:
 ```bash
-git clone https://github.com/EmirhanSariyar/zinciri-kirma.git
-cd zinciri-kirma
-# ZinciriKirma.html dosyasını tarayıcıda aç
+git clone https://github.com/EmirhanSariyar/Zinciri-Kirma-Local.git
+cd Zinciri-Kirma-Local
+# index.html dosyasını tarayıcıda aç
 ```
 
 Ya da direkt [indirip](index.html) tarayıcıda çalıştırabilirsin.
